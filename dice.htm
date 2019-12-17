@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Drew Davenport
+Final Project - WAAAAAAAAGH! Dice HTML file
+CSIS 228 Herbet
+12/11/2019-->
+<!-- The head giving the page the title, linking the CSS file, and using the standard character set. -->
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="dicestyle.css">
+  <title>WAAAAAAAAAAAAAGH DICE</title>
+</head>
+
+<!-- The body gives the page its main structure. -->
+<body>
+	<header>
+		<h1>WAAAAAAAAAAAAAGH!! DICE!</h1>
+	</header>
+	<div>
+		<!-- This script tag writes the user prompts and tells the user how to use this app. -->	
+		<script>
+			/*The first two lines is the user prompt if it was written by one of the lovely boyz in the images
+			followed by the readable prompt. It's a bit tonge-in-cheek, but making apps fun is half of why we make them.*/
+			document.write("<h3>Put way dat bucket uv dice for yer ork boyz'z choppaz. We've got ya kovered wit' dis WAAAGH! dice wotzit.</h3>");
+			document.write("<h3>Jus enta da numba uv dice yer need ta roll an' WAAAGH! away.</h3>");
+			document.writeln("<h4>Translated from Orkish-'Not enough dice or just too many to roll? <br>Simply enter an integer and we will sort the rolls for you.'</h3>");
+		</script>
+			<!-- The user input box as well as the submit button to activate the app. -->
+			<input id="userinput" type="text" placeholder="How many attacks?">
+			<button id="enter">WAAAAAAAAAAAAAGH!</button>
+			<!-- The first part of the display for each number instance. -->
+			<p id="1s">1: </p>
+			<p id="2s">2: </p>
+			<p id="3s">3: </p>
+			<p id="4s">4: </p>
+			<p id="5s">5: </p>
+			<p id="6s">6: </p>
+			<!-- This button is here if you want to hard reset everything without reloading the page.
+			Mostly a leftover from testing as the final iterations reset itself on most cases,
+			the ability to manually reset does give you satifation of control.
+			So if you feel like everything is out of control, just remember... There is this button. :) -->
+			<button id = "Reset" onclick="resetApp()">Reset</button>
+	</div>
+</body>
+<!-- The footer is here to contain the link to the JavaScript file as well as giving credit of 
+copyrighted material and webpage authors-->
+<footer>
+	<p id ="foot">Images are property of Games Workshop. Header flames from PNGIX<br>Web page built by Drew Davenport</p>
+	<script type="text/javascript" src="dicescript.js"></script>
+</footer>
+</html>

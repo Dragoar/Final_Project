@@ -1,0 +1,70 @@
+/*  Drew Davenport
+Final Project - WAAAAAAAAGH! Dice CSS file
+CSIS 228 Herbet
+12/11/2019*/
+
+/* The body gives the page it's overall look here that everything first draws its properties.*/
+body {
+	background-color: DarkGreen;
+	text-align:center;
+	color: White;
+	margin: 35px;
+}
+/* This division is to insert the two Ork images set them to always be a certain size,
+while almost* never covering up any of the text. (once you start shrinking the x-axis they start 
+causing problems for the dice numbers*/
+div{
+	background-image: url("img/manyorks.jpg"), url("img/Ork_line.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: left bottom, right bottom;	
+	background-size: 400px 240px, 400px 240px;
+}
+/* The header separates the top of the page from the rest 
+and inserts a transparent fire image to frame the app title.*/
+header{
+	background-image: url("img/fire.png");
+	background-size: 45% 100%;
+	background-repeat: repeat-x;
+	background-position: bottom;	
+}
+/* h1 is used for the main title and make it BIG */
+h1 {
+	font-family: Impact, fantasy;
+	text-align: center;
+	font-size: xxx-large;
+}
+/* h3 is for the Ork text to make it impact font but i also made it a bit thinner to read it better. */	
+h3 {
+	font-family: Impact, fantasy;
+	font-weight: 300;
+}
+/* h4 is for the boring readable prompt */
+h4 {
+	font-family: Times, Times New Roman, serif;
+}
+/* I wanted to make the buttons stand a bit more than the standard windows button
+SO BIG RED "DO NOT TOUCH" BUTTONS IT WAS! */ 
+button{
+	background-color: Red;
+	font-family: Impact, fantasy;
+	font-size: large;
+}
+/* This makes the results a little bigger to read easier*/
+p{
+	font-size: large;
+	font-family: Impact, fantasy;
+}
+/* Footer p here just makes the text within it slightly smaller
+ and change it back to Times font*/
+footer p{
+	font-size: small;
+	font-family: Times, Times New Roman, serif;
+	
+}
+/* After i made the buttons bigger to be able to read them better,
+I was a bit annoyed the input box being just a little bit smaller.
+It has now been resiezed to match the button but also recentered.*/
+input{
+	font-size: 20px;
+	width:173px;
+}
